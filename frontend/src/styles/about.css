@@ -1,0 +1,55 @@
+.about{
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 4rem;
+}
+
+.about .row .content {
+    text-align: left;
+}
+
+.about .row .image img {
+    width: 50vw;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: var(--color);
+}
+
+.about .row .content p {
+    font-size: 1.5rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.about::before, .about::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    opacity: .2;
+    border-radius: 50%;
+}
+
+.about::before {
+    height: 50rem;
+    width: 50rem;
+    background: #ccc;
+    bottom: -10rem; left: -10rem;
+}
+
+.about::after {
+    height: 60rem;
+    width: 60rem;
+    background: var(--color);
+    top: -10rem; right: -10rem;
+}

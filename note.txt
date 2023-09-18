@@ -1,0 +1,2 @@
+1/npm i --legacy-peer-deps cho frontend
+2/chỉ dùng node version 16
